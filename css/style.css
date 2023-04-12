@@ -19,7 +19,7 @@
     height: 70px;
     background-color: var(--preto-1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
     padding: 0 3%;
@@ -27,7 +27,7 @@
 
 .cabecalho_logo {
     color: var(--cor-secundaria);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .cabecalho_nav ul {
@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 160px;
     height: 100%;
 }
@@ -75,11 +75,11 @@
 }
 
 .conteudo_home_design {
-    font-size: 5rem;
-    width: 80%;
+    font-size: 6rem;
+    width: 90%;
     display: flex;
     flex-flow: row wrap;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .imgDesign {
@@ -185,3 +185,89 @@
 .redirecionamentos div:not(.redirecionamento_office_chair) {
     border-bottom: var(--preto-1) 1px solid;
 }
+
+.produtos {
+    background-color: var(--cor-primaria);
+    color: var(--preto-3);
+    padding: 10% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9.5rem;
+}
+
+.produtos_principal,
+.produtos_secundario {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos_principal_card {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.produtos_principal_titulo {
+    width: 27.7%;
+}
+
+.produtos_principal>img {
+    width: 28%;
+}
+
+.produtos_principal_card img {
+    width: 100%;
+}
+
+.produtos_texto_card {
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.principal_titulo {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.principal_texto {
+    font-size: 0.95rem;
+}
+
+.produtos_secundario img {
+    width: 50%;
+}
+
+.produtos_secundario_texto {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.secundario_titulo {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.secundario_subtitulo,
+.secundario_texto {
+    font-size: 0.9rem;
+}
+
+#servicos {
+    background-color: var(--preto-1);
+    color: var(--cor-primaria);
+    width: 90%;
+    padding: 10% 4%;
+}
+

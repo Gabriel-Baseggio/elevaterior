@@ -115,7 +115,6 @@
 }
 
 .home_texto_descricao {
-    font-family: var(--fonte-primaria);
     font-weight: 200;
     display: flex;
     flex-direction: column;
@@ -124,7 +123,6 @@
 }
 
 .texto_descricao_link {
-    font-family: var(--fonte-primaria);
     font-weight: 600;
     padding: 10px 20px;
     background-color: var(--cor-secundaria);
@@ -159,15 +157,16 @@
 
 .redirecionamentos {
     background-color: var(--cor-secundaria);
-    padding: 2% 10%;
+    padding: 6% 8%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .redirecionamentos a {
     text-decoration: none;
     color: var(--preto-3);
-    font-family: var(--fonte-primaria);
-    font-size: 3rem;
-    width: 100%;
+    font-size: 4rem;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -176,11 +175,11 @@
 
 .redirecionamentos div {
     width: 100%;
-    padding: 3% 0;
+    padding: 2.5% 0;
 }
 
 .redirecionamentos img {
-    width: 3%;
+    width: 5%;
 }
 
 .redirecionamentos div:not(.redirecionamento_office_chair) {

@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
+/* Variáveis de cores e fontes */
 :root {
     --cor-primaria: #FFFFFF;
     --cor-secundaria: #FFD400;
@@ -9,11 +10,13 @@
     --fonte-primaria: 'SF Pro Display', sans serif;
 }
 
+/* Reset das margins e paddings */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Início do Cabeçalho da página */
 .cabecalho {
     font-family: var(--fonte-primaria);
     height: 70px;
@@ -60,12 +63,16 @@
     border-bottom: 2px var(--cor-primaria) solid;
 }
 
+/* Fim do Cabeçalho da página */
+
+/* Início do Main/Conteúdo da página */
 .conteudo {
     font-family: var(--fonte-primaria);
     background-color: var(--preto-1);
     color: var(--cor-primaria);
 }
 
+/* Início do Home da página */
 .conteudo_home_titulo {
     display: flex;
     flex-direction: row;
@@ -155,6 +162,9 @@
     width: 130px;
 }
 
+/* Fim do Home da Página */
+
+/* Início dos Redirecionamentos da página */
 .redirecionamentos {
     background-color: var(--cor-secundaria);
     padding: 6% 8%;
@@ -186,6 +196,9 @@
     border-bottom: var(--preto-1) 1px solid;
 }
 
+/* Fim dos Redirecionamentos da página */
+
+/* Início das descrições de Produtos  da página */
 .produtos {
     background-color: var(--cor-primaria);
     color: var(--preto-3);
@@ -264,6 +277,9 @@
     font-size: 0.9rem;
 }
 
+/* Fim das descrições de Produtos  da página */
+
+/* Início das descrições de Serviços  da página */
 #servicos {
     box-sizing: border-box;
     background-color: var(--preto-1);
@@ -333,6 +349,9 @@
     color: var(--preto-3);
 }
 
+/* Fim das descrições de Serviços  da página */
+
+/* Início dos Contatos da página */
 #contato {
     background-color: var(--cor-secundaria);
     color: var(--preto-3);
@@ -366,6 +385,11 @@
     width: 12%;
 }
 
+/* Fim dos Contatos da página */
+
+/* Fim do Main/Conteúdo da página */
+
+/* Início do Rodapé da página */
 .rodape {
     background-color: var(--cor-secundaria);
     color: var(--preto-3);
@@ -415,3 +439,5 @@
     flex-direction: row;
     justify-content: flex-end;
 }
+
+/* Fim do Rodapé da página */

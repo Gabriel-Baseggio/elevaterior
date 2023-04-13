@@ -265,9 +265,153 @@
 }
 
 #servicos {
+    box-sizing: border-box;
     background-color: var(--preto-1);
     color: var(--cor-primaria);
-    width: 90%;
-    padding: 10% 4%;
+    width: 100%;
+    padding: 10% 8%;
 }
 
+.servicos_titulo {
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+.servicos_cards {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3.5rem;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.servicos_card {
+    width: 35%;
+    background-color: var(--preto-2);
+    height: 390px;
+    padding: 3% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cabecalho_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 2rem;
+}
+
+.numero_card {
+    font-weight: 200;
+}
+
+.conteudo_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.titulo_card {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.descricao_card {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.servicos_card:hover {
+    transition: 0.5s;
+    background-color: var(--cor-secundaria);
+    color: var(--preto-3);
+}
+
+#contato {
+    background-color: var(--cor-secundaria);
+    color: var(--preto-3);
+    padding: 6% 9% 21% 9%;
+}
+
+.contato_conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contato_conteudo_titulo {
+    font-size: 6rem;
+    font-weight: 500;
+    width: 70%;
+}
+
+.contato_botao_contactar {
+    width: 16%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.contato_botao_contactar img {
+    width: 12%;
+}
+
+.rodape {
+    background-color: var(--cor-secundaria);
+    color: var(--preto-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-primaria);
+}
+
+.rodape_conteudo {
+    padding: 4% 0;
+    border-top: 1px solid var(--preto-3);
+    width: 83%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape_logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 30%;
+}
+
+.rodape_nav {
+    width: 30%;
+}
+
+.rodape_nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.rodape_nav a {
+    text-decoration: none;
+    color: var(--preto-3);
+    font-size: 0.9rem;
+}
+
+.rodape_privacidade {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

@@ -1,6 +1,6 @@
 # Elevaterior
 
-# Desenvolvido por: Gabriel Baseggio
+Desenvolvido por: Gabriel Baseggio
 
 Desenvolvimento apenas com HTML5 e CSS3 de uma landing page, definida pelo professor.
 

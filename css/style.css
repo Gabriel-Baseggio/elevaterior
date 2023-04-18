@@ -569,10 +569,76 @@
 
     .servicos_cards {
         overflow-x: scroll;
-        width: auto;
+        width: auto ;
     }
 
     .servicos_card {
+        padding: 8% 5%;
+        width: auto;
+        background-color: var(--preto-2);
+        height: 25rem;
+    }
+    
+    .cabecalho_card {
+        width: 300px;
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .conteudo_card {
+        width: 85%;
+        gap: 1rem;
+    }
+    .conteudo_card h1 {
+        width: 50%;
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+
+    .contato {
+        padding: 20% 5%;
+    }
+
+    .contato_conteudo {
+        margin-bottom: 4rem;
+    }
+
+    .contato_botao_contactar {
+        width: 30%;
+        font-size: 1.3rem;
+    }
+
+    .contato_conteudo_titulo {
+        font-size: 3rem;
+    }
+
+    .rodape_conteudo {
+        padding: 8% 0;
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-items: center;
+        gap: 2rem 5rem;
+    }
+
+    .rodape_logo {
+        width: auto;
+    }
+
+    .rodape_nav {
+        width: auto;
+    }
+
+    .rodape_nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        width: auto;
+    }
+
+    .rodape_privacidade {
         width: auto;
     }
 

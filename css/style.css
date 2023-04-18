@@ -19,13 +19,12 @@
 /* Início do Cabeçalho da página */
 .cabecalho {
     font-family: var(--fonte-primaria);
-    height: 70px;
     background-color: var(--preto-1);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    padding: 0 3%;
+    padding: 3%;
 }
 
 .cabecalho_logo {
@@ -33,11 +32,16 @@
     font-size: 1.5rem;
 }
 
+.cabecalho_nav {
+    width: max-content;
+}
+
 .cabecalho_nav ul {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 10%;
     list-style: none;
+    width: 100%;
 }
 
 .cabecalho_nav a {
@@ -53,12 +57,12 @@
     align-items: center;
     justify-content: flex-end;
     width: 160px;
-    height: 100%;
+    height: 10px;
 }
 
 .cabecalho_menu div {
     width: 30px;
-    height: 7px;
+    height: 100%;
     border-top: 2px var(--cor-primaria) solid;
     border-bottom: 2px var(--cor-primaria) solid;
 }
@@ -70,6 +74,7 @@
     font-family: var(--fonte-primaria);
     background-color: var(--preto-1);
     color: var(--cor-primaria);
+    width: auto;
 }
 
 /* Início do Home da página */
@@ -94,7 +99,7 @@
     margin-right: -18px;
 }
 
-#imgScroll {
+.imgScroll {
     height: 150px;
 }
 
@@ -170,6 +175,7 @@
     padding: 6% 8%;
     width: 100%;
     box-sizing: border-box;
+    width: auto;
 }
 
 .redirecionamentos a {
@@ -208,6 +214,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 9.5rem;
+    width: auto;
 }
 
 .produtos_principal,
@@ -280,12 +287,13 @@
 /* Fim das descrições de Produtos  da página */
 
 /* Início das descrições de Serviços  da página */
-#servicos {
+.servicos {
     box-sizing: border-box;
     background-color: var(--preto-1);
     color: var(--cor-primaria);
     width: 100%;
     padding: 10% 8%;
+    width: auto;
 }
 
 .servicos_titulo {
@@ -352,10 +360,11 @@
 /* Fim das descrições de Serviços  da página */
 
 /* Início dos Contatos da página */
-#contato {
+.contato {
     background-color: var(--cor-secundaria);
     color: var(--preto-3);
     padding: 6% 9% 21% 9%;
+    width: auto;
 }
 
 .contato_conteudo {
@@ -398,6 +407,7 @@
     justify-content: center;
     align-items: center;
     font-family: var(--fonte-primaria);
+    width: auto;
 }
 
 .rodape_conteudo {
@@ -441,3 +451,129 @@
 }
 
 /* Fim do Rodapé da página */
+
+/* Início da responsividade para 576px de largura */
+@media (max-width: 576px) {    
+    .cabecalho { 
+        justify-content: space-between;  
+    }
+
+    .cabecalho_nav, .imgScroll {
+        display: none;
+    }
+
+    .conteudo_home > div{
+        padding: 0;
+        flex-direction: column;
+    }   
+
+    .conteudo_home_design {
+        margin-top: 3rem;
+        font-size: 3.5rem;
+    }
+
+    .imgDesign {
+        height: 30px;
+        margin: 0;
+    }
+
+    .conteudo_home_descricao {
+        height: auto;
+    }
+
+    .conteudo_home_descricao > img {
+        margin-top: 2rem;
+        margin-left: -2rem;
+        width: 90%;
+    }
+
+    .conteudo_home_texto {
+        width: 85%;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .texto_descricao_link {
+        width: 30%;
+        padding: 4% 6%;
+    }
+
+    .redirecionamentos {
+        padding: 15% 3%;
+    }
+
+    .redirecionamentos a {
+        font-size: 2.5rem;
+    }
+    
+    .redirecionamentos div {
+        padding: 5% 0;
+    }
+
+    .produtos {
+        padding: 30% 0 25% 0;
+    }
+
+    .produtos_principal {
+        width: 90%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .produtos_principal_card, .produtos_principal_titulo, .produtos_principal > img {
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .produtos_texto_card {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .produtos_principal_titulo {
+        align-self: flex-start;
+        width: 73%;
+        order: 1;
+    }
+    
+    .principal_titulo, .secundario_titulo {
+        width: 75%;
+        font-size: 2.5rem;
+    }
+
+    .principal_texto, .secundario_texto, .secundario_subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .produtos_secundario {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .produtos_secundario > *, .produtos_secundario > img {
+        width: 100%;
+    }
+
+    .produtos_secundario_texto {
+        gap: 2rem;
+    }
+
+    .servicos {
+        padding: 25% 0 25% 3%;
+    }
+
+    .servicos_titulo {
+        font-size: 2.5rem;
+    }
+
+    .servicos_cards {
+        overflow-x: scroll;
+        width: auto;
+    }
+
+    .servicos_card {
+        width: auto;
+    }
+
+}
